@@ -102,6 +102,71 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Why Us Section */}
+      <section className="container px-4 py-16">
+        <h2 className="text-3xl font-bold text-primary text-center mb-4">
+          Why Choose Learn by Doing Academy?
+        </h2>
+        <p className="text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          We prepare you for the modern job market through practical experience and innovative learning
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="text-xl font-semibold text-primary mb-4">Industry-Relevant Skills</h3>
+            <ul className="space-y-3 text-gray-600">
+              <li className="flex items-start gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary/60 mt-2" />
+                <span>Hands-on experience with modern tools and technologies</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary/60 mt-2" />
+                <span>Real-world project portfolio development</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary/60 mt-2" />
+                <span>Practical application of industry best practices</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="text-xl font-semibold text-primary mb-4">AI-First Approach</h3>
+            <ul className="space-y-3 text-gray-600">
+              <li className="flex items-start gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary/60 mt-2" />
+                <span>Learn to leverage AI tools effectively in your work</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary/60 mt-2" />
+                <span>Modern AI-augmented workplace preparation</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary/60 mt-2" />
+                <span>Future-proof your career with AI integration skills</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="text-xl font-semibold text-primary mb-4">Professional Growth</h3>
+            <ul className="space-y-3 text-gray-600">
+              <li className="flex items-start gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary/60 mt-2" />
+                <span>Industry expert mentorship and guidance</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary/60 mt-2" />
+                <span>Strong professional network building</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary/60 mt-2" />
+                <span>Career development and job placement support</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* How It Works Section */}
       <section className="container px-4 py-16">
         <h2 className="text-3xl font-bold text-primary text-center mb-4">
