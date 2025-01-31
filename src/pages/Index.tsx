@@ -11,7 +11,14 @@ const Index = () => {
       title: "Business",
       description: "Master leadership, economy, and business communication through hands-on projects.",
       icon: <Briefcase />,
-      features: ["Sociocracy 3.0", "OKRs", "Business Communication", "Team Management"],
+      features: [
+        "Sociocracy 3.0 & Agile Leadership",
+        "OKRs & Strategic Planning",
+        "Business Communication & Negotiation",
+        "Team Management & Conflict Resolution",
+        "Financial Planning & Analysis",
+        "Project Portfolio Management"
+      ],
       alternatives: [
         { name: "iMBA", price: "$22,104" },
       ],
@@ -20,7 +27,14 @@ const Index = () => {
       title: "Design",
       description: "Build a professional UI/UX portfolio through real-world projects.",
       icon: <Palette />,
-      features: ["Figma Prototyping", "Design Sprints", "UX Research", "Portfolio Building"],
+      features: [
+        "Advanced Figma Prototyping",
+        "Design Systems Architecture",
+        "User Research & Testing",
+        "Design Sprint Facilitation",
+        "Interaction Design Patterns",
+        "Accessibility & Inclusive Design"
+      ],
       alternatives: [
         { name: "Career Foundry", price: "€6,175" },
         { name: "Interaction Design", price: "€15/month" },
@@ -30,7 +44,14 @@ const Index = () => {
       title: "Programming",
       description: "Learn modern web development through practical applications.",
       icon: <Code />,
-      features: ["JavaScript/TypeScript", "Vue.js/Nuxt.js", "Serverless Architecture", "Agile/Scrum"],
+      features: [
+        "Full-Stack JavaScript/TypeScript",
+        "Vue.js & Nuxt.js Mastery",
+        "Cloud Architecture & DevOps",
+        "API Design & Integration",
+        "Testing & Performance Optimization",
+        "Security Best Practices"
+      ],
       alternatives: [
         { name: "VueSchool", price: "$25/month" },
         { name: "Harvard CS50", price: "$149" },
@@ -40,7 +61,14 @@ const Index = () => {
       title: "Storytelling",
       description: "Master the art of visual storytelling and film production.",
       icon: <Video />,
-      features: ["Video Editing", "Cinematography", "Public Speaking", "3D Modeling"],
+      features: [
+        "Professional Video Editing",
+        "Advanced Cinematography",
+        "Narrative Structure & Scripting",
+        "Motion Graphics & Animation",
+        "Sound Design & Mixing",
+        "Content Strategy & Distribution"
+      ],
       alternatives: [
         { name: "SAE Institute", price: "€4,410" },
       ],
@@ -74,8 +102,76 @@ const Index = () => {
         </div>
       </section>
 
+      {/* How It Works Section */}
+      <section className="container px-4 py-16">
+        <h2 className="text-3xl font-bold text-primary text-center mb-4">
+          How It Works
+        </h2>
+        <p className="text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          Our unique approach combines hands-on learning with expert mentorship
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="relative p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="absolute -top-4 -left-4 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">1</div>
+            <h3 className="font-semibold text-lg mb-3 text-primary">Choose Your Path</h3>
+            <p className="text-gray-600">Select from our four specialized programs tailored to your career goals</p>
+          </div>
+          <div className="relative p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="absolute -top-4 -left-4 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">2</div>
+            <h3 className="font-semibold text-lg mb-3 text-primary">Join Live Sessions</h3>
+            <p className="text-gray-600">Participate in interactive workshops and collaborative learning sessions</p>
+          </div>
+          <div className="relative p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="absolute -top-4 -left-4 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">3</div>
+            <h3 className="font-semibold text-lg mb-3 text-primary">Build Projects</h3>
+            <p className="text-gray-600">Work on real-world projects with guidance from industry experts</p>
+          </div>
+          <div className="relative p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="absolute -top-4 -left-4 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">4</div>
+            <h3 className="font-semibold text-lg mb-3 text-primary">Get Certified</h3>
+            <p className="text-gray-600">Complete your portfolio and receive certification for your achievements</p>
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold text-primary text-center mb-8">Your Learning Journey</h3>
+          <div className="relative">
+            <div className="absolute top-1/2 left-0 right-0 h-1 bg-primary/20 -translate-y-1/2"></div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="relative bg-white p-6 rounded-xl shadow-lg">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">1</div>
+                <h4 className="text-lg font-semibold mb-3 text-primary text-center">Foundation (Month 1-2)</h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Core concepts and principles</li>
+                  <li>• Basic tools and methodologies</li>
+                  <li>• First hands-on project</li>
+                </ul>
+              </div>
+              <div className="relative bg-white p-6 rounded-xl shadow-lg">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">2</div>
+                <h4 className="text-lg font-semibold mb-3 text-primary text-center">Development (Month 3-4)</h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Advanced techniques</li>
+                  <li>• Team collaboration</li>
+                  <li>• Complex project work</li>
+                </ul>
+              </div>
+              <div className="relative bg-white p-6 rounded-xl shadow-lg">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">3</div>
+                <h4 className="text-lg font-semibold mb-3 text-primary text-center">Mastery (Month 5-6)</h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Industry-level projects</li>
+                  <li>• Portfolio completion</li>
+                  <li>• Career preparation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Programs Section */}
-      <section id="programs-section" className="container px-4 py-16">
+      <section id="programs-section" className="container max-w-5xl px-4 py-16">
         <h2 className="text-3xl font-bold text-primary text-center mb-4">
           Choose Your Path
         </h2>
@@ -90,7 +186,7 @@ const Index = () => {
       </section>
 
       {/* Our Experts Section */}
-      <section className="container px-4 py-16">
+      <section className="container max-w-5xl px-4 py-16">
         <h2 className="text-3xl font-bold text-primary text-center mb-12">
           Meet Your Mentor
         </h2>
