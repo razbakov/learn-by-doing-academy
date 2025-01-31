@@ -7,7 +7,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check, Star } from "lucide-react";
 
 interface ApplicationDialogProps {
   children: React.ReactNode;
@@ -54,8 +54,41 @@ const ApplicationDialog = ({ children }: ApplicationDialogProps) => {
             <div>
               <h4 className="font-medium">3. Choose Your Contribution</h4>
               <p className="text-sm text-muted-foreground">
-                Select a monthly donation amount that works for you (€10, €25, €100, etc.).
+                Select a monthly donation that matches your goals:
               </p>
+              <div className="mt-2 space-y-2">
+                <div className="rounded-lg border p-3">
+                  <div className="flex items-center justify-between">
+                    <span className="font-medium">€10/month</span>
+                    <span className="text-sm text-muted-foreground">Basic</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-1">Access to all learning materials and group sessions</p>
+                </div>
+                <div className="rounded-lg border p-3 bg-accent/5">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <span className="font-medium">€25/month</span>
+                      <span className="bg-accent text-accent-foreground text-xs px-2 py-0.5 rounded">Popular</span>
+                    </div>
+                    <span className="text-sm text-muted-foreground">Enhanced</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    Basic benefits + priority code reviews and monthly 1-on-1 mentoring session
+                  </p>
+                </div>
+                <div className="rounded-lg border p-3">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <span className="font-medium">€100/month</span>
+                      <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
+                    </div>
+                    <span className="text-sm text-muted-foreground">Premium</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    Enhanced benefits + weekly 1-on-1 mentoring, career guidance, and job referrals
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
