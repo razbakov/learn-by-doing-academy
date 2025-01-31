@@ -53,7 +53,7 @@ const ProgramCard = ({
           </ul>
         </div>
 
-        <ApplicationDialog>
+        <ApplicationDialog initialProgram={title}>
           <Button className="w-full bg-primary text-white hover:bg-primary/90 transition-colors duration-300">
             Apply Now
           </Button>

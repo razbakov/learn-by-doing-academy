@@ -8,16 +8,28 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Check, Star } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface ApplicationDialogProps {
   children: React.ReactNode;
+  initialProgram?: string;
 }
 
-const ApplicationDialog = ({ children }: ApplicationDialogProps) => {
+const ApplicationDialog = ({ children, initialProgram }: ApplicationDialogProps) => {
+  const [open, setOpen] = useState(false);
   const [selectedProgram, setSelectedProgram] = useState<string | null>(null);
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
-  const [open, setOpen] = useState(false);
+
+  // Update selected program when dialog opens or initialProgram changes
+  useEffect(() => {
+    if (open && initialProgram) {
+      setSelectedProgram(initialProgram);
+    } else if (!open) {
+      // Reset selections when dialog closes
+      setSelectedProgram(null);
+      setSelectedPlan(null);
+    }
+  }, [open, initialProgram]);
 
   const programs = [
     {
