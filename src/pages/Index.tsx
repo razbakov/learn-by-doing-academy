@@ -59,10 +59,10 @@ const Index = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,theme(colors.primary/10)_1px,transparent_0)] bg-[size:24px_24px] opacity-30 animate-[pulse_4s_ease-in-out_infinite]" />
         <div className="relative z-10">
           <h1 className="text-7xl font-extrabold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary [text-shadow:_0_1px_30px_rgb(99_102_241_/_20%)]">
-            Learn by Doing
+            Learn by Doing Academy
           </h1>
           <p className="text-2xl text-gray-800 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Join our project-based education platform and master real-world skills through hands-on experience. Pay what you can afford.
+            Master real-world skills through hands-on projects. Join our project-based education platform with flexible, pay-what-you-can pricing.
           </p>
           <ApplicationDialog>
             <Button className="bg-accent text-white hover:bg-accent/90 px-12 py-6 text-xl font-semibold animate-[fadeIn_1s_ease-out_0.6s_both] shadow-[0_0_30px_-5px_rgba(236,72,153,0.3)] hover:shadow-[0_0_30px_-5px_rgba(236,72,153,0.5)] transition-all duration-300 rounded-xl hover:-translate-y-1 relative overflow-hidden group backdrop-blur-sm">
@@ -75,9 +75,12 @@ const Index = () => {
 
       {/* Programs Section */}
       <section id="programs-section" className="container px-4 py-16">
-        <h2 className="text-3xl font-bold text-primary text-center mb-12">
-          Our Programs
+        <h2 className="text-3xl font-bold text-primary text-center mb-4">
+          Choose Your Path
         </h2>
+        <p className="text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          Four comprehensive programs designed to help you build real-world expertise
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {programs.map((program) => (
             <ProgramCard key={program.title} {...program} />
