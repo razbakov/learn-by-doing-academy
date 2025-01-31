@@ -46,6 +46,11 @@ const Index = () => {
     },
   ];
 
+  const scrollToPrograms = () => {
+    const programsSection = document.getElementById('programs-section');
+    programsSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-secondary to-white">
       {/* Hero Section */}
@@ -64,7 +69,7 @@ const Index = () => {
       </section>
 
       {/* Programs Section */}
-      <section className="container px-4 py-16">
+      <section id="programs-section" className="container px-4 py-16">
         <h2 className="text-3xl font-bold text-primary text-center mb-12">
           Our Programs
         </h2>
@@ -97,7 +102,11 @@ const Index = () => {
               Apply Now
             </Button>
           </ApplicationDialog>
-          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+          <Button 
+            variant="outline" 
+            className="border-primary text-primary hover:bg-primary hover:text-white"
+            onClick={scrollToPrograms}
+          >
             Learn More
           </Button>
         </div>
