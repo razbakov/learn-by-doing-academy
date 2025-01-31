@@ -1,4 +1,4 @@
-import { Briefcase, Palette, Code, Video } from "lucide-react";
+import { Briefcase, Palette, Code, Video, Linkedin } from "lucide-react";
 import ProgramCard from "@/components/ProgramCard";
 import FAQ from "@/components/FAQ";
 import { Button } from "@/components/ui/button";
@@ -202,7 +202,14 @@ const Index = () => {
                 </div>
               </div>
               <div>
-                <h3 className="font-semibold text-xl mb-1">Alex Razbakov</h3>
+                <h3 className="font-semibold text-xl mb-1">
+                  <div className="flex items-center gap-2">
+                    Alex Razbakov
+                    <a href="https://www.linkedin.com/in/razbakov/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">
+                      <Linkedin className="w-4 h-4" />
+                    </a>
+                  </div>
+                </h3>
                 <p className="text-gray-600 mb-4">Senior Full Stack Developer, Business Mentor & Design Lead</p>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   With 15+ years of experience in web development, business leadership, and design, Alex brings a unique blend of technical and creative expertise. He specializes in Vue.js ecosystem, cloud solutions, UI/UX design, and business strategy. His comprehensive background spans across modern technologies, team leadership, and design thinking methodologies.
@@ -303,7 +310,12 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h3 className="font-semibold">James Robey</h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-semibold">James Robey</h3>
+                  <a href="https://www.linkedin.com/in/james-robey12/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">
+                    <Linkedin className="w-4 h-4" />
+                  </a>
+                </div>
                 <p className="text-sm text-gray-600">Data Analyst</p>
               </div>
             </div>
@@ -333,7 +345,12 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h3 className="font-semibold">Dipali Mankodi</h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-semibold">Dipali Mankodi</h3>
+                  <a href="https://www.linkedin.com/in/dipalimankodi/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">
+                    <Linkedin className="w-4 h-4" />
+                  </a>
+                </div>
                 <p className="text-sm text-gray-600">Product Designer at Whitespace Software</p>
               </div>
             </div>
@@ -363,7 +380,12 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h3 className="font-semibold">Marjorie Dorighello</h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-semibold">Marjorie Dorighello</h3>
+                  <a href="https://www.linkedin.com/in/marjrocks/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">
+                    <Linkedin className="w-4 h-4" />
+                  </a>
+                </div>
                 <p className="text-sm text-gray-600">Art Gallery Consultant at YellowKorner</p>
               </div>
             </div>
@@ -382,7 +404,12 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h3 className="font-semibold">Sanya Panic</h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-semibold">Sanya Panic</h3>
+                  <a href="https://www.linkedin.com/in/sanja-panic-3378b7185/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">
+                    <Linkedin className="w-4 h-4" />
+                  </a>
+                </div>
                 <p className="text-sm text-gray-600">Full Stack Engineer at WeDance</p>
               </div>
             </div>
@@ -401,7 +428,12 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h3 className="font-semibold">Zuriya Dyuss</h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-semibold">Zuriya Dyuss</h3>
+                  <a href="https://www.linkedin.com/in/zuriya-dyussebayeva/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">
+                    <Linkedin className="w-4 h-4" />
+                  </a>
+                </div>
                 <p className="text-sm text-gray-600">UX Designer at WeDance</p>
               </div>
             </div>
@@ -419,7 +451,12 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h3 className="font-semibold">Joshua Ilori</h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-semibold">Joshua Ilori</h3>
+                  <a href="https://www.linkedin.com/in/jia-ayo/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">
+                    <Linkedin className="w-4 h-4" />
+                  </a>
+                </div>
                 <p className="text-sm text-gray-600">Software Developer at ToroNet</p>
               </div>
             </div>
