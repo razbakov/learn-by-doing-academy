@@ -88,6 +88,218 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Our Experts Section */}
+      <section className="container px-4 py-16">
+        <h2 className="text-3xl font-bold text-primary text-center mb-12">
+          Meet Your Mentor
+        </h2>
+        <div className="grid grid-cols-1 gap-8">
+          <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <div className="flex items-start gap-6 mb-6">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary font-bold text-xl">AR</span>
+                </div>
+              </div>
+              <div>
+                <h3 className="font-semibold text-xl mb-1">Alex Razbakov</h3>
+                <p className="text-gray-600 mb-4">Senior Full Stack Developer, Business Mentor & Design Lead</p>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  With 15+ years of experience in web development, business leadership, and design, Alex brings a unique blend of technical and creative expertise. He specializes in Vue.js ecosystem, cloud solutions, UI/UX design, and business strategy. His comprehensive background spans across modern technologies, team leadership, and design thinking methodologies.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-2 text-primary">Technical Expertise</h4>
+                    <ul className="space-y-2 text-gray-700">
+                      <li>• Vue.js & Nuxt.js (7+ years)</li>
+                      <li>• TypeScript & Modern JavaScript</li>
+                      <li>• Cloud Solutions (AWS, Firebase)</li>
+                      <li>• Full Stack Development</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2 text-primary">Business Leadership</h4>
+                    <ul className="space-y-2 text-gray-700">
+                      <li>• Team Management & Mentoring</li>
+                      <li>• Agile & Scrum Methodologies</li>
+                      <li>• Business Strategy</li>
+                      <li>• Project Management</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2 text-primary">Design Skills</h4>
+                    <ul className="space-y-2 text-gray-700">
+                      <li>• UI/UX Design</li>
+                      <li>• Design Systems</li>
+                      <li>• User Research</li>
+                      <li>• Prototyping</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Industry Recommendations Section */}
+      <section className="container px-4 py-16 bg-primary/5 rounded-3xl my-8">
+        <h2 className="text-3xl font-bold text-primary text-center mb-12">
+          Industry Recognition
+        </h2>
+        <div className="max-w-3xl mx-auto space-y-6">
+          <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <div className="flex items-start gap-6 mb-6">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary font-bold text-xl">DB</span>
+                </div>
+              </div>
+              <div>
+                <h3 className="font-semibold text-xl mb-1">Dmytro Biriukov</h3>
+                <p className="text-gray-600 mb-4">Product Manager</p>
+                <p className="text-gray-700 text-lg leading-relaxed italic">
+                  "I had the pleasure of working with Alex on numerous successful projects, and his communication skills and openness make him a pleasure to work with. Alex's innovative and creative approach to web development has resulted in some truly impressive results, and I have fond memories of our collaborative work together. I would highly recommend Alex to anyone looking for a skilled and enthusiastic web developer."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <div className="flex items-start gap-6 mb-6">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary font-bold text-xl">AZ</span>
+                </div>
+              </div>
+              <div>
+                <h3 className="font-semibold text-xl mb-1">Alexander Zinoviev</h3>
+                <p className="text-gray-600 mb-4">Architect</p>
+                <p className="text-gray-700 text-lg leading-relaxed italic">
+                  "I have only nice experience with Alex. Productive discussing, only meaningful advices always up-to-date solutions. I could learn lots from him. Highly recommended!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* FAQ Section */}
+      <section className="container px-4 py-16">
+        <h2 className="text-3xl font-bold text-primary text-center mb-12">
+          Success Stories
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="bg-white p-6 rounded-xl shadow-lg">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary font-bold">JR</span>
+                </div>
+              </div>
+              <div>
+                <h3 className="font-semibold">James Robey</h3>
+                <p className="text-sm text-gray-600">Data Analyst</p>
+              </div>
+            </div>
+            <p className="text-gray-700">
+              "My time as an Intern was great. I learnt a lot of new skills and gained experience collaborating with others on projects. It helped guide me on my career path having learnt more about my strengths and weaknesses, and natural interests as a professional."
+            </p>
+          </div>
+          
+          <div className="bg-white p-6 rounded-xl shadow-lg">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary font-bold">MD</span>
+                </div>
+              </div>
+              <div>
+                <h3 className="font-semibold">Marjorie Dorighello</h3>
+                <p className="text-sm text-gray-600">Art Gallery Consultant at YellowKorner</p>
+              </div>
+            </div>
+            <p className="text-gray-700">
+              "Led team sprints and fostered cross-functional collaboration between designers and developers. Designed and tested a comprehensive design system, created prototypes, and conducted in-depth user research."
+            </p>
+          </div>
+          
+          <div className="bg-white p-6 rounded-xl shadow-lg">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary font-bold">DM</span>
+                </div>
+              </div>
+              <div>
+                <h3 className="font-semibold">Dipali Mankodi</h3>
+                <p className="text-sm text-gray-600">Product Designer at Whitespace Software</p>
+              </div>
+            </div>
+            <p className="text-gray-700">
+              "Gained hands-on experience in UX/UI design through real projects, leading to a full-time position as Product Designer at Whitespace Software."
+            </p>
+          </div>
+          
+          <div className="bg-white p-6 rounded-xl shadow-lg">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary font-bold">SP</span>
+                </div>
+              </div>
+              <div>
+                <h3 className="font-semibold">Sanya Panic</h3>
+                <p className="text-sm text-gray-600">Full Stack Engineer at WeDance</p>
+              </div>
+            </div>
+            <p className="text-gray-700">
+              "The hands-on experience and mentorship I received were invaluable. The project-based learning approach helped me develop practical skills that directly translated to my role."
+            </p>
+          </div>
+          
+          <div className="bg-white p-6 rounded-xl shadow-lg">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary font-bold">ZD</span>
+                </div>
+              </div>
+              <div>
+                <h3 className="font-semibold">Zuriya Dyuss</h3>
+                <p className="text-sm text-gray-600">UX Designer at WeDance</p>
+              </div>
+            </div>
+            <p className="text-gray-700">
+              "The program's focus on real-world projects and collaborative learning environment prepared me well for my career. I developed both technical and soft skills that are essential in my current role."
+            </p>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow-lg">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary font-bold">JI</span>
+                </div>
+              </div>
+              <div>
+                <h3 className="font-semibold">Joshua Ilori</h3>
+                <p className="text-sm text-gray-600">Software Developer at ToroNet</p>
+              </div>
+            </div>
+            <p className="text-gray-700">
+              "During my internship, I gained hands-on experience with Vue.js, Firebase, and Nuxt.js. I worked on exciting projects including NFC card integration and admin systems. The project-based learning approach and team collaboration experience were instrumental in securing my current role at ToroNet."
+            </p>
+          </div>
+        </div>
+        
+        <div className="text-center mb-16">
+          <h3 className="text-2xl font-bold text-gray-800 mb-4">Where Our Alumni Work</h3>
+          <div className="flex flex-wrap justify-center gap-8 items-center">
+            <div className="text-gray-600 font-semibold">YellowKorner</div>
+            <div className="text-gray-600 font-semibold">Whitespace Software</div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="container px-4 py-16">
         <h2 className="text-3xl font-bold text-primary text-center mb-12">
