@@ -475,6 +475,78 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Project Examples Section */}
+      <section className="container px-4 py-16 bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl my-8">
+        <h2 className="text-3xl font-bold text-primary text-center mb-12">
+          Real Projects, Real Impact
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="text-xl font-semibold text-primary mb-4">Weekly Newsletter Design</h3>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-medium text-gray-800 mb-2">Challenge</h4>
+                <p className="text-gray-600">Design and test a weekly newsletter for an online dance platform that effectively engages the target audience while delivering value and highlighting important updates.</p>
+              </div>
+              <div>
+                <h4 className="font-medium text-gray-800 mb-2">Solution</h4>
+                <ul className="list-disc list-inside text-gray-600 space-y-1">
+                  <li>Created consistent design following platform guidelines</li>
+                  <li>Developed engaging content strategy</li>
+                  <li>Implemented user feedback system</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium text-gray-800 mb-2">Outcome</h4>
+                <p className="text-gray-600">Successfully launched newsletter that keeps subscribers informed about new classes, instructors, and upcoming events while maintaining platform consistency.</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="text-xl font-semibold text-primary mb-4">Ticketing System Integration</h3>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-medium text-gray-800 mb-2">Challenge</h4>
+                <p className="text-gray-600">Evaluate and compare ticketing systems to improve user experience by keeping users on the platform instead of redirecting to third-party services.</p>
+              </div>
+              <div>
+                <h4 className="font-medium text-gray-800 mb-2">Solution</h4>
+                <ul className="list-disc list-inside text-gray-600 space-y-1">
+                  <li>Conducted comprehensive system analysis</li>
+                  <li>Identified integration requirements</li>
+                  <li>Evaluated custom development options</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium text-gray-800 mb-2">Outcome</h4>
+                <p className="text-gray-600">Successfully identified opportunities for a custom ticketing solution that better serves dance organizers and attendees based on platform-specific needs.</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="text-xl font-semibold text-primary mb-4">Platform Version 3.0</h3>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-medium text-gray-800 mb-2">Challenge</h4>
+                <p className="text-gray-600">Improve platform usability to make information finding easier and faster for users while maintaining a cool, modern interface.</p>
+              </div>
+              <div>
+                <h4 className="font-medium text-gray-800 mb-2">Solution</h4>
+                <ul className="list-disc list-inside text-gray-600 space-y-1">
+                  <li>Optimized navigation structure</li>
+                  <li>Refined label naming conventions</li>
+                  <li>Enhanced UI element placement</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium text-gray-800 mb-2">Outcome</h4>
+                <p className="text-gray-600">Successfully launched platform update with improved usability and modern design, making information discovery more intuitive for users.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="container px-4 py-16">
         <h2 className="text-3xl font-bold text-primary text-center mb-12">
