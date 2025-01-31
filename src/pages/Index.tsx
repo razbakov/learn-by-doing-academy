@@ -2,6 +2,7 @@ import { Briefcase, Palette, Code, Video } from "lucide-react";
 import ProgramCard from "@/components/ProgramCard";
 import FAQ from "@/components/FAQ";
 import { Button } from "@/components/ui/button";
+import ApplicationDialog from "@/components/ApplicationDialog";
 
 const Index = () => {
   const programs = [
@@ -55,9 +56,11 @@ const Index = () => {
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto animate-fade-in">
           Join our project-based education platform and master real-world skills through hands-on experience. Pay what you can afford.
         </p>
-        <Button className="bg-accent hover:bg-accent/90 text-white px-8 py-6 text-lg animate-fade-in">
-          Start Your Journey
-        </Button>
+        <ApplicationDialog>
+          <Button className="bg-accent hover:bg-accent/90 text-white px-8 py-6 text-lg animate-fade-in">
+            Start Your Journey
+          </Button>
+        </ApplicationDialog>
       </section>
 
       {/* Programs Section */}
@@ -89,9 +92,11 @@ const Index = () => {
           Join our community of learners and start your journey today with a donation of your choice.
         </p>
         <div className="flex justify-center gap-4">
-          <Button className="bg-accent hover:bg-accent/90 text-white px-8">
-            Apply Now
-          </Button>
+          <ApplicationDialog>
+            <Button className="bg-accent hover:bg-accent/90 text-white px-8">
+              Apply Now
+            </Button>
+          </ApplicationDialog>
           <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
             Learn More
           </Button>
