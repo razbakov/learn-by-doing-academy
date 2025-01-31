@@ -20,7 +20,7 @@ const Index = () => {
         "Project Portfolio Management"
       ],
       alternatives: [
-        { name: "iMBA", price: "$22,104" },
+        { name: "iMBA", price: "$22,104", link: "https://giesonline.illinois.edu/tuition-costs" },
       ],
     },
     {
@@ -36,8 +36,8 @@ const Index = () => {
         "Accessibility & Inclusive Design"
       ],
       alternatives: [
-        { name: "Career Foundry", price: "€6,175" },
-        { name: "Interaction Design", price: "€15/month" },
+        { name: "CareerFoundry", price: "€6,175", link: "https://careerfoundry.com/" },
+        { name: "Interaction Design", price: "€15/month", link: "https://www.interaction-design.org/" },
       ],
     },
     {
@@ -53,8 +53,8 @@ const Index = () => {
         "Security Best Practices"
       ],
       alternatives: [
-        { name: "VueSchool", price: "$25/month" },
-        { name: "Harvard CS50", price: "$149" },
+        { name: "VueSchool", price: "$25/month", link: "https://vueschool.io/" },
+        { name: "Harvard CS50", price: "$149", link: "https://www.edx.org/cs50" },
       ],
     },
     {
@@ -70,7 +70,7 @@ const Index = () => {
         "Content Strategy & Distribution"
       ],
       alternatives: [
-        { name: "SAE Institute", price: "€4,410" },
+        { name: "SAE Institute", price: "€4,410", link: "https://www.sae.edu/deu/en/" },
       ],
     },
   ];
