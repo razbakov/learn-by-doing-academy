@@ -9,6 +9,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Check, Star } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useToast } from "@/hooks/use-toast";
+import { getPricePackage } from "@/lib/payment-matrix";
 
 interface ApplicationDialogProps {
   children: React.ReactNode;
@@ -19,6 +21,8 @@ const ApplicationDialog = ({ children, initialProgram }: ApplicationDialogProps)
   const [open, setOpen] = useState(false);
   const [selectedProgram, setSelectedProgram] = useState<string | null>(null);
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
+  const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
 
   // Update selected program when dialog opens or initialProgram changes
   useEffect(() => {
@@ -60,19 +64,17 @@ const ApplicationDialog = ({ children, initialProgram }: ApplicationDialogProps)
 
   const handleStartChallenge = async () => {
     if (selectedProgram && selectedPlan) {
-      try {
-        // Here you would typically make an API call to start the challenge
-        await new Promise(resolve => setTimeout(resolve, 1000)); // Simulating API call
-        
-        // Show success message
-        alert(`Successfully enrolled in ${selectedProgram} program with ${selectedPlan} plan!\nWe'll contact you shortly with next steps.`);
-        
-        // Reset and close dialog
-        setOpen(false);
-        setSelectedProgram(null);
-        setSelectedPlan(null);
-      } catch (error) {
-        alert('Failed to start challenge. Please try again.');
+      const programId = selectedProgram.toLowerCase();
+      const pricePackage = getPricePackage(programId, selectedPlan);
+      
+      if (pricePackage?.paymentLink) {
+        window.location.href = pricePackage.paymentLink;
+      } else {
+        toast({
+          title: "Payment link not available",
+          description: "The payment link for this plan is not available yet. Please try again later.",
+          variant: "destructive",
+        });
       }
     }
   };
@@ -210,10 +212,11 @@ const ApplicationDialog = ({ children, initialProgram }: ApplicationDialogProps)
           {selectedProgram && (
             <Button
               onClick={handleStartChallenge}
-              disabled={!selectedPlan}
+              disabled={!selectedPlan || isLoading}
               className="w-full bg-primary text-white hover:bg-primary/90 transition-colors duration-300"
+              aria-busy={isLoading}
             >
-              Start Challenge
+              Continue to Payment
             </Button>
           )}
         </div>
