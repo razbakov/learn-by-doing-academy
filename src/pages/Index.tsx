@@ -3,6 +3,7 @@ import ProgramCard from "@/components/ProgramCard";
 import FAQ from "@/components/FAQ";
 import { Button } from "@/components/ui/button";
 import ApplicationDialog from "@/components/ApplicationDialog";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Index = () => {
   const programs = [
@@ -97,8 +98,11 @@ const Index = () => {
           <div className="bg-white p-8 rounded-2xl shadow-lg">
             <div className="flex items-start gap-6 mb-6">
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold text-xl">AR</span>
+                <div className="w-16 h-16">
+                  <Avatar className="w-full h-full">
+                    <AvatarImage src="/people/razbakov.jpg" alt="Alex Razbakov" />
+                    <AvatarFallback>AR</AvatarFallback>
+                  </Avatar>
                 </div>
               </div>
               <div>
@@ -151,9 +155,11 @@ const Index = () => {
           <div className="bg-white p-8 rounded-2xl shadow-lg">
             <div className="flex items-start gap-6 mb-6">
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold text-xl">DB</span>
-                </div>
+                <img
+                  src="/people/biriukov.jpg"
+                  alt="Dmytro Biriukov"
+                  className="w-16 h-16 rounded-full object-cover"
+                />
               </div>
               <div>
                 <h3 className="font-semibold text-xl mb-1">Dmytro Biriukov</h3>
@@ -168,9 +174,11 @@ const Index = () => {
           <div className="bg-white p-8 rounded-2xl shadow-lg">
             <div className="flex items-start gap-6 mb-6">
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold text-xl">AZ</span>
-                </div>
+                <img
+                  src="/people/zinoviev.jpg"
+                  alt="Alexander Zinoviev"
+                  className="w-16 h-16 rounded-full object-cover"
+                />
               </div>
               <div>
                 <h3 className="font-semibold text-xl mb-1">Alexander Zinoviev</h3>
@@ -192,9 +200,11 @@ const Index = () => {
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <div className="flex items-start gap-4 mb-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold">JR</span>
-                </div>
+                <img
+                  src="/people/robey.jpg"
+                  alt="James Robey"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
               </div>
               <div>
                 <h3 className="font-semibold">James Robey</h3>
@@ -209,9 +219,11 @@ const Index = () => {
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <div className="flex items-start gap-4 mb-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold">MD</span>
-                </div>
+                <img
+                  src="/people/dorighello.jpg"
+                  alt="Marjorie Dorighello"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
               </div>
               <div>
                 <h3 className="font-semibold">Marjorie Dorighello</h3>
@@ -226,9 +238,11 @@ const Index = () => {
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <div className="flex items-start gap-4 mb-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold">DM</span>
-                </div>
+                <img
+                  src="/people/mankodi.jpg"
+                  alt="Dipali Mankodi"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
               </div>
               <div>
                 <h3 className="font-semibold">Dipali Mankodi</h3>
@@ -243,9 +257,11 @@ const Index = () => {
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <div className="flex items-start gap-4 mb-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold">SP</span>
-                </div>
+                <img
+                  src="/people/panic.jpg"
+                  alt="Sanya Panic"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
               </div>
               <div>
                 <h3 className="font-semibold">Sanya Panic</h3>
@@ -260,9 +276,11 @@ const Index = () => {
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <div className="flex items-start gap-4 mb-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold">ZD</span>
-                </div>
+                <img
+                  src="/people/dyuss.jpg"
+                  alt="Zuriya Dyuss"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
               </div>
               <div>
                 <h3 className="font-semibold">Zuriya Dyuss</h3>
@@ -276,9 +294,11 @@ const Index = () => {
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <div className="flex items-start gap-4 mb-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold">JI</span>
-                </div>
+                <img
+                  src="/people/ilori.jpg"
+                  alt="Joshua Ilori"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
               </div>
               <div>
                 <h3 className="font-semibold">Joshua Ilori</h3>
