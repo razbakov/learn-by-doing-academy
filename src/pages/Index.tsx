@@ -211,8 +211,49 @@ const Index = () => {
                 <p className="text-sm text-gray-600">Data Analyst</p>
               </div>
             </div>
+            <div className="aspect-video w-full mb-4 rounded-lg overflow-hidden">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/37tkXapz7iw"
+                title="James Robey's Review"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
             <p className="text-gray-700">
               "My time as an Intern was great. I learnt a lot of new skills and gained experience collaborating with others on projects. It helped guide me on my career path having learnt more about my strengths and weaknesses, and natural interests as a professional."
+            </p>
+          </div>
+          
+          <div className="bg-white p-6 rounded-xl shadow-lg">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="flex-shrink-0">
+                <img
+                  src="/people/mankodi.jpg"
+                  alt="Dipali Mankodi"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
+              </div>
+              <div>
+                <h3 className="font-semibold">Dipali Mankodi</h3>
+                <p className="text-sm text-gray-600">Product Designer at Whitespace Software</p>
+              </div>
+            </div>
+            <div className="aspect-video w-full mb-4 rounded-lg overflow-hidden">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/16hBTep3Mxs"
+                title="Dipali Mankodi's Review"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <p className="text-gray-700">
+              "Gained hands-on experience in UX/UI design through real projects, leading to a full-time position as Product Designer at Whitespace Software."
             </p>
           </div>
           
@@ -232,25 +273,6 @@ const Index = () => {
             </div>
             <p className="text-gray-700">
               "Led team sprints and fostered cross-functional collaboration between designers and developers. Designed and tested a comprehensive design system, created prototypes, and conducted in-depth user research."
-            </p>
-          </div>
-          
-          <div className="bg-white p-6 rounded-xl shadow-lg">
-            <div className="flex items-start gap-4 mb-4">
-              <div className="flex-shrink-0">
-                <img
-                  src="/people/mankodi.jpg"
-                  alt="Dipali Mankodi"
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-              </div>
-              <div>
-                <h3 className="font-semibold">Dipali Mankodi</h3>
-                <p className="text-sm text-gray-600">Product Designer at Whitespace Software</p>
-              </div>
-            </div>
-            <p className="text-gray-700">
-              "Gained hands-on experience in UX/UI design through real projects, leading to a full-time position as Product Designer at Whitespace Software."
             </p>
           </div>
           
