@@ -24,7 +24,7 @@ export const programs: Program[] = [
         currency: 'eur',
         interval: 'month',
         features: ['Access to all learning materials', 'Group sessions', 'Community access'],
-        paymentLink: '', // Add your Stripe payment link here
+        paymentLink: 'https://buy.stripe.com/14kg2zflWf4U2VGcMV', // Add your Stripe payment link here
       },
       enhanced: {
         name: 'Enhanced',
@@ -36,7 +36,7 @@ export const programs: Program[] = [
           'Priority code reviews',
           'Monthly 1-on-1 mentoring session',
         ],
-        paymentLink: '', // Add your Stripe payment link here
+        paymentLink: 'https://buy.stripe.com/28ocQnddO3mcdAkdR0', // Add your Stripe payment link here
       },
       premium: {
         name: 'Premium',
@@ -49,7 +49,7 @@ export const programs: Program[] = [
           'Career guidance',
           'Job referrals',
         ],
-        paymentLink: '', // Add your Stripe payment link here
+        paymentLink: 'https://buy.stripe.com/9AQ2bJc9K7Cs3ZK9AL', // Add your Stripe payment link here
       },
     },
   },
@@ -141,7 +141,7 @@ export const programs: Program[] = [
         currency: 'eur',
         interval: 'month',
         features: ['Access to all learning materials', 'Group sessions', 'Community access'],
-        paymentLink: '', // Add your Stripe payment link here
+        paymentLink: 'https://buy.stripe.com/aEU9Eb1v63mcbsc5kw', // Add your Stripe payment link here
       },
       enhanced: {
         name: 'Enhanced',
@@ -153,7 +153,7 @@ export const programs: Program[] = [
           'Priority content reviews',
           'Monthly 1-on-1 mentoring session',
         ],
-        paymentLink: '', // Add your Stripe payment link here
+        paymentLink: 'https://buy.stripe.com/4gw6rZc9KaOE2VGfZb', // Add your Stripe payment link here
       },
       premium: {
         name: 'Premium',
@@ -166,7 +166,7 @@ export const programs: Program[] = [
           'Portfolio development',
           'Job referrals',
         ],
-        paymentLink: '', // Add your Stripe payment link here
+        paymentLink: 'https://buy.stripe.com/dR6eYv7Tu0a00NybIW', // Add your Stripe payment link here
       },
     },
   },
