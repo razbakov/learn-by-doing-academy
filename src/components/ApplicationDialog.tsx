@@ -158,6 +158,7 @@ const ApplicationDialog = ({ children, initialProgram }: ApplicationDialogProps)
                             <Check className="h-4 w-4 text-primary" />
                           </div>
                         )}
+                        <span className="bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded">1 Week Free</span>
                       </div>
                       <span className="text-sm text-muted-foreground">Basic</span>
                     </div>
@@ -176,6 +177,7 @@ const ApplicationDialog = ({ children, initialProgram }: ApplicationDialogProps)
                           </div>
                         )}
                         <span className="bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded">Popular</span>
+                        <span className="bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded">1 Week Free</span>
                       </div>
                       <span className="text-sm text-muted-foreground">Enhanced</span>
                     </div>
@@ -196,6 +198,7 @@ const ApplicationDialog = ({ children, initialProgram }: ApplicationDialogProps)
                           </div>
                         )}
                         <Star className="h-4 w-4 text-yellow-500 fill-yellow-500 animate-bounce" />
+                        <span className="bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded">1 Week Free</span>
                       </div>
                       <span className="text-sm text-muted-foreground">Premium</span>
                     </div>
@@ -216,7 +219,7 @@ const ApplicationDialog = ({ children, initialProgram }: ApplicationDialogProps)
               className="w-full bg-primary text-white hover:bg-primary/90 transition-colors duration-300"
               aria-busy={isLoading}
             >
-              Continue to Payment
+              Start Free Trial
             </Button>
           )}
         </div>

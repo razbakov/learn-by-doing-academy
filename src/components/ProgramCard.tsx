@@ -69,7 +69,7 @@ const ProgramCard = ({
 
         <ApplicationDialog initialProgram={title}>
           <Button className="w-full bg-primary text-white hover:bg-primary/90 transition-colors duration-300">
-            Start from €10/month
+            Start Free Trial
           </Button>
         </ApplicationDialog>
       </div>
