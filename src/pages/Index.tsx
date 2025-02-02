@@ -381,7 +381,7 @@ const Index = () => {
                     <Linkedin className="w-4 h-4" />
                   </a>
                 </div>
-                <p className="text-sm text-gray-600">Data Analyst</p>
+                <p className="text-sm text-gray-600">Data Analyst at Frontline Group</p>
               </div>
             </div>
             <div className="aspect-video w-full mb-4 rounded-lg overflow-hidden">
