@@ -158,7 +158,7 @@ const ApplicationDialog = ({ children, initialProgram }: ApplicationDialogProps)
                             <Check className="h-4 w-4 text-primary" />
                           </div>
                         )}
-                        <span className="bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded">1 Week Free</span>
+                        <span className="bg-primary text-white text-xs px-2 py-0.5 rounded">1 Week Free</span>
                       </div>
                       <span className="text-sm text-muted-foreground">Basic</span>
                     </div>
@@ -176,8 +176,8 @@ const ApplicationDialog = ({ children, initialProgram }: ApplicationDialogProps)
                             <Check className="h-4 w-4 text-primary" />
                           </div>
                         )}
-                        <span className="bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded">Popular</span>
-                        <span className="bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded">1 Week Free</span>
+                        <span className="bg-primary text-white text-xs px-2 py-0.5 rounded">Popular</span>
+                        <span className="bg-primary text-white text-xs px-2 py-0.5 rounded">1 Week Free</span>
                       </div>
                       <span className="text-sm text-muted-foreground">Enhanced</span>
                     </div>
